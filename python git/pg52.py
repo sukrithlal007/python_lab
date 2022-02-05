@@ -1,0 +1,9 @@
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+
+m=int(input("enter a range:"))
+for i in range(m):
+       print(recur_fibo(i))
